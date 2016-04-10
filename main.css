@@ -18,16 +18,61 @@ h3{
     padding-left:2%}        
 p{    
     color:white;     
-    font-size:17px}    
+    font-size:17px;
+    padding: 1px;
+}    
 body{    
     background-image:url("https://www.walldevil.com/wallpapers/a92/wallpaper-triangles-geometry-black-minimalistic-geometric-wallpapers.jpg");     
     background-repeat:repeat;     
     text-align:center;     
     background-position:right;     
-    margin:0}
+    margin:0;
+}
+
+@media screen and (max-width: 478px) {
+    body {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 470px) {
+    header {
+        position: absolute;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #405580;
+        border: 1px solid #fff;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 2px 0 2px 2px;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    section {
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 footer{    
     background:rgba(76,79,106,0.54);   
-    overflow:hidden}    
+    overflow:hidden;
+    clear: both;
+}    
 img{    
     text-align:center;     
     max-width:100%;     
@@ -38,7 +83,10 @@ a{
     text-decoration:none;     
     font-weight:bold;    
     font-size:17px    
-}    
+}
+p { 
+    margin: 0;
+}
 a:hover{    
     color:white;     
     text-decoration:underline} 
@@ -46,50 +94,43 @@ a:hover{
     border:5px solid aqua;     
     margin-left:auto;     
     margin-right:auto;     
-    width:50%;     
+    width:60%;     
     text-align:center;     
     padding:8px;     
-    background:rgba(92,94,111,0.29)}    
-.ansatteidineapps1_div{    
-    border:0px solid aqua;     
-    margin-left:auto;     
-    margin-right:auto;     
-    width:20%;     
-    text-align:center;     
-    padding:0px;     
-    background:rgba(92,94,111,0.29)}
-.ansatteidineapps2_div{    
-    border:0px solid aqua;     
-    margin-left:auto;     
-    margin-right:auto;     
-    width:20%;     
-    text-align:center;     
-    padding:0px;     
-    background:rgba(92,94,111,0.29)}
-.ansatteidineapps3_div{    
-    border:0px solid aqua;     
-    margin-left:auto;     
-    margin-right:auto;     
-    width:20%;     
-    text-align:center;     
-    padding:0px;     
-    background:rgba(92,94,111,0.29)}
-.ansatteidineapps4_div{    
-    border:0px solid aqua;     
-    margin-left:auto;     
-    margin-right:auto;     
-    width:20%;     
-    text-align:center;     
-    padding:0px;     
-    background:rgba(92,94,111,0.29)} 
+    background:rgba(86, 92, 142, 0.6);
+    border-radius: 10px;
+}
+.row {
+    
+}
+.col {
+    background: rgba(86, 92, 142, 0.6);
+    display: inline-block;
+    width: 25%;
+    height: 160px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:5px solid aqua;
+}
+.col1 {
+    background: rgba(86, 92, 142, 0.6);
+    display: inline-block;
+    width: 25%;
+    height: 160px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:5px solid aqua;
+}
+
 .kontaktossbestill_div{    
     border:5px solid aqua;     
     margin-left:auto;     
     margin-right:auto;     
-    width:50%;     
+    width:60%;     
     text-align:center;     
     padding:8px;     
-    background:rgba(92,94,111,0.29)}
+    background:rgba(86, 92, 142, 0.6)
+}
 .yammer{
     border:5px solid aqua;     
     margin-left:auto;     
@@ -108,7 +149,7 @@ a:hover{
     padding:0px;     
     background:rgba(92,94,111,0.29)}    
 header{    
-    background:rgba(76,79,106,0.54);     
+    background:rgba(86, 92, 142, 0.6);     
     width:100%;     
     height:86px;     
     position:fixed;     
@@ -122,45 +163,56 @@ header{
     width:200px;     
     height:60px;     
     background:url(http://i.imgur.com/6lSsiYK.png) no-repeat center}    
-nav{    
+nav {    
     float:right;     
-    padding:35px 20px 20px 0}    
+    padding:35px 20px 20px 0;
+}    
 #menu-icon{    
-    display:hidden;     
-    width:40px;     
-    height:40px;     
-    background:url(http://www.w3newbie.com/wp-content/uploads/icon.png) center}    
-a:hover#menu-icon{    
-    border-radius:4px 4px 0 0}    
+    display: hidden;     
+    width: 40px;     
+    height: 40px;     
+    background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center
+}    
+a:hover#menu-icon {    
+    border-radius:4px 4px 0 0
+}
 ul{    
-    list-style:none}    
-nav ul li{    
+    list-style: none
+}    
+nav ul li {    
     display:inline-block;     
     float:left;     
     padding:10px}    
-.current{    
+.current {    
     color:#fff;     
     text-decoration:underline}    
-#doc{    
+#doc {    
     margin:40px 0}    
-#content{    
+#content {    
     margin:0 auto;     
     max-width:1140px;     
-    margin-top:110px}    
+    margin-top:110px
+}    
 section{    
     width:29%;     
     float:left;     
     margin:2% 2%;     
-    text-align:center}  
-   
-   
+    text-align:center
+}
+ul.social li img {
+    height: 70px;
+}
+ul.social li {
+    display: inline;
+}
+
 .simple-ss{    
     border:5px solid aqua;     
   width:800px;     
   height:250px;     
   background-color:rgba(92,94,111,0.29);     
   margin:auto;     
-  background-image:url("https://i.imgur.com/7nlmwAJ.png");     
+  background-image:url("http://i.imgur.com/zpQlRr3.png");     
   background-position:0;     
   background-repeat:no-repeat;     
   background-size:cover;     
