@@ -1,0 +1,140 @@
+header {
+    font-family: 'Raleway', sans-serif;}
+/*----------h----------*/
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;     
+    line-height:16.4px;     
+    color: #000000;          
+    font-size:180%;     
+    line-height:120%;     
+    padding: 3% ;
+}
+}
+h2 {
+    
+}
+h3{
+    
+}
+/*----------p----------*/
+p{
+    color: black;
+    font-size: 14px;
+    padding: 1px;
+    margin: 1;
+    font-family: 'Raleway', sans-serif;}
+
+/*----------table-----------*/
+table {
+    width:100%;}
+
+table, th , td {
+    border:3px outset rgba(78, 245, 16, 0.58);
+    border-collapse: collapse;
+    padding: 5px;}
+
+th {
+    text-align: left;}
+
+table tr:nth-child(odd) {
+    background-color: #d8fae9;}
+table tr:nth-child(even) {
+    background-color: azure}
+
+/*----------body---------*/
+body {
+    text-align:center;    
+    margin:0;
+    display: block;
+    float: center;
+    text-align: center;
+    margin: 2% 29%;
+    background-image: url(https://images3.alphacoders.com/667/667444.jpg)}
+/*------Ul-menyen---------*/
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;}
+
+ul#menu li {
+    display: inline;
+    margin-right: 8px;}
+
+ul#menu li a {
+    background-color: rgba(61, 209, 73, 0.62);
+    padding: 12.5px 25px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px 4px 0 0;
+    border-radius: 10px;}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: #206031;}
+/*----------main----------*/
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;}
+/*----------block-quote----------*/
+blockquote {
+/*----------diver----------*/
+}
+.test1 {
+    background: rgba(247, 255, 241, 0.64);
+    display: inline-block;
+    width: 85%;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);}
+.test2 {
+    background: rgba(247, 255, 241, 0.64);
+    display: inline-block;
+    width: 85%;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);}
+.datoogtid1 {
+    background: rgba(247, 255, 241, 0.64);
+    display: inline-block;
+    width: 75%;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);}
+.omossvenstre {
+    position: absolute;
+    top: 211px;
+    left: 3%;
+    width: 780px;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);
+    background: rgba(247, 255, 241, 0.64);}
+.omossvenstrenede {
+    position: absolute;
+    top: 546px;
+    left: 3%;
+    width: 780px;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);
+    background: rgba(247, 255, 241, 0.64);}
+.omosshoyre {
+    position: absolute;
+    top: 211px;
+    right: 4%;
+    width: 550px;
+    height: 750px;
+    border-radius: 10px;
+    border:3px outset rgba(78, 245, 16, 0.78);}
+/*----------footer----------*/
+footer{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(61, 209, 73, 0.62);
+    text-align: center;}
+/*----------section----------*/
+section {
+    width:29%;     
+    float:left;
+    margin:2% 2%;     
+    text-align:center;}
