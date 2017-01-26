@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embeds</title>
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+    </head>
+<body>
+    <div class="tilbakeknapp">
+    <a href="index.html"><button type="button"><img src="bilder/tilbakeknapp.png" alt="Verktøy ikon";></button></a>
+    </div>
+    <div class="dineappslogo">
+            <img src="bilder/DineAppsheaderlogo.png" alt="dineappslogo" style="width:782px;height:140px;">
+        </div>
+    <button onclick="goBack()" class="backbutton"><img src="bilder/left-arrow.png" alt="Verktøy ikon";></button>
+        <button onclick="goForward()" class="forwardbutton"><img src="bilder/right-arrow.png" alt="Verktøy ikon";></button>
+        <br>
+        <nav id="nav01"></nav>
+    <div class="integrasjonerlogo">
+            <img src="bilder/integrasjonerlogo.png" alt="Integrasjoner ikon";>
+        </div>
+    <br><br><br>
+    <div class="dttk2">
+            <h2>Embeds</h2>
+    </div>
+    <br><br><br>
+    <div id="main">
+        <div class="twitter">
+        <a class="twitter-timeline" href="https://twitter.com/EVRY_no" data-widget-id="738089226919653377">Tweets by @EVRY_no</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        </div>
+        <div class="yammer">
+        <div id="embedded-feed" style="height:700px;width:700px;"></div>
+        <script type="text/javascript" src="https://s0.assets-yammer.com/assets/platform_embed.js"></script>
+        <script type="text/javascript">
+            yam.connect.embedFeed({
+                container: "#embedded-feed",
+                network: "o365.iktfag.com",
+                feedType: "group",
+                feedId: "7196878"
+            });
+        </script>
+        </div>
+    <div class="tilbakeverktøyknapp">
+        <a href="embeds.html"><button type="button"><img src="bilder/tilbakeverktøyknapp.png" alt="Verktøy ikon";></button></a>
+    </div>
+    </div>
+    <div class="footer">
+    <div id="button"></div>
+                <div id="container">
+                    <div id="cont">
+                        <div class="footer_center">
+	                       <h3>Kontakt oss: <a href="http://192.168.1.125:8080/support/">helpdesk</a> | <a>tlf</a> | <a href="google.com">e-mail</a><img src="bilder/like.png" alt="Verktøy ikon";></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>

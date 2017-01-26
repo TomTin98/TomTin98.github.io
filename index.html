@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="shortcut icon" href=".\favicon.ico">
-        <meta charset="UTF-8">
-        <title>Nettside til eksamen</title>
-        <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
-        <link href="main.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="container"></div>
-        <nav id="nav01"></nav>
-        <div id="main">
-        <h1 style="font-size: 42px;">Velkommen til vår bedrift!</h1>
-        <h2 style="font-family: 'Raleway', sans-serif;">ting på denne nettsiden</h2>
-        <p>or does what gfhwe do.</p>
-        <p>orld dttttttttttttoes trywhat we do.</p>
-        <p>orld tdrtoes what we do.</p>
-        <p>orld drtyytttttoes what we do.</p>
-        </div>
-    <br>
-    <div class="test2">
-        <h2 style="font-family: 'Raleway', sans-serif;">En quote</h2>
-        <blockquote>
-            <p>"The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on."</p>
-            <p>-Barack Obama</p>
-        </blockquote>
+<head>
+    <title>DineApps - Fortsett</title>
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+    <video autoplay loop poster="bilder/indexbakgrunn.png" id="bgvid">
+    <source src="https://zippy.gfycat.com/TanFragrantHornet.webm" type="video/webm">
+    Browseren din støtter ikke HTML5 video.
+</video>
+    <div id="dineappslogo" class="dineappslogo">
+        <img src="bilder/DineAppsheaderlogo.png" alt="dineappslogo";>
+        <br><br>
+        <div class="dttk1login">
+    <div ng-app="">
+        <h3><b>Hva heter du?</b></h3>
+        <h3><b>Navn : <input type="text" ng-model="name" placeholder="Skriv inn navnet ditt her"></b></h3>
+        <h3><b>Hei {{name}}</b></h3>
     </div>
-        <br>
-        <br>
-    <div class="test1">
-        <h2 style="font-family: 'Raleway', sans-serif;">Noe her:</h2>
-        <blockquote>
-            <p>"The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on. have time to feel sorry for myself. I don't have time to complain. I'm going to press on. have time to feel sorry for myself. I don't have time to complain. I'm going to press on. have time to feel sorry for myself. I don't have time to complain. I'm going to press on."</p>
-        </blockquote>
+</div>
+    <br><br>
+    <div class="dttk1login">
+    <form name="login">
+        <h3><b>Brukernavn:</b></h3><input type="text" name="userid"/>
+        <h3><b>Passord:</b></</h3><br><input type="password" name="pswrd"/>
+        <br><br>
+        <input type="button" onclick="check(this.form)" value="Logg inn"/>
+        <input type="reset" value="Avbryt"/>
+    </form>
     </div>
-        <br>
-        <br>
-        <section>
-                <p> en til section</p>
-            </section>
-            <section>
-                <p> en til section</p>
-            </section>
-            <section>
-                <p> en til section</p>
-            </section>
-        <footer id="foot01"></footer>
-        <script src="script.js"></script>
-        
-    </body>
+    </div>
+    <script language="javascript">
+        function check(form)
+        {
+    if(form.userid.value == "EksempelBN" && form.pswrd.value == "abc123")
+    {
+        window.open('hjem.html')
+    }
+    else
+    {
+        alert("Error: feil brukernavn/passord")
+    }
+        }
+</script>
+</body>
 </html>

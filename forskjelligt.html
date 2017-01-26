@@ -1,51 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Forskjelligt</title>
-  <meta charset="UTF-8">
-  <link href="main.css" rel="stylesheet">
-</head>
+    <head>
+        <title>Forskjelligt</title>
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+    </head>
 <body>
-<nav id="nav01"></nav>
-<div id="main">
-<h1 style="font-size: 42px;">Forskjelligt</h1>
-<table>
-<tr>
-  <th>Navn</th>
-  <th>Jobb</th>
-  <th>Land</th>
-</tr>
-<tr>
-  <td>Bob Kåre</td>
-  <td>webutvikler</td>
-  <td>Norge</td>
-</tr>
-<tr>
-  <td>Bob Kåre</td>
-  <td>webutvikler</td>
-  <td>Norge</td>
-</tr>
-<tr>
-  <td>Bob Kåre</td>
-  <td>webutvikler</td>
-  <td>Norge</td>
-</tr>
-<tr>
-  <td>Bob Kåre</td>
-  <td>webutvikler</td>
-  <td>Norge</td>
-</tr>
-</table>
-<br>
-<div class="datoogtid1">
-<h1 style="font-size: 17px;">Dato og tid (Javascript)</h1>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Klikk her for å se Dato og Tid</button>
-    <p id="demo"></p>
+    <div class="tilbakeknapp">
+    <a href="index.html"><button type="button"><img src="bilder/tilbakeknapp.png" alt="Verktøy ikon";></button></a>
     </div>
-<footer id="foot01"></footer>
-</div>
-<script src="script.js"></script>
+    <div class="dineappslogo">
+            <img src="bilder/DineAppsheaderlogo.png" alt="dineappslogo" style="width:782px;height:140px;">
+    </div>
+    <button onclick="goBack()" class="backbutton"><img src="bilder/left-arrow.png" alt="Verktøy ikon";></button>
+        <button onclick="goForward()" class="forwardbutton"><img src="bilder/right-arrow.png" alt="Verktøy ikon";></button>
+        <br>
+        <nav id="nav01"></nav>
+    <div class="forskjelligtlogo">
+            <img src="bilder/forskjelligtlogo.png" alt="Random ikon";>
+        </div>
+    <br><br><br>
+    <div id="main">
+        <div class="randomknapperrandom">
+            <button>
+            <a href="#Forskjelligt">
+                <img src="bilder/forskjelligtlogo.png" alt="Random ikon";>
+            </a>
+            </button>
+        </div>
+        <div class="randomknappercopyright">
+            <button>
+                <a href="#Copyright">
+                    <img src="bilder/copyrightlogo.png" alt="Random ikon";>
+                </a>
+            </button>
+        </div>
+        <div class="randomknapperliste">
+            <button>
+                <a href="#liste">
+                    <img src="bilder/listelogo2.png" alt="Random ikon";>
+                </a>
+            </button>
+        </div>
+        <div class="dttk2">
+            <h2><a name="Forskjelligt"></a>Forskjelligt</h2>
+        </div>
+        <br><br><br>
+        <div class="dttk1" id="altfade">
+            <!----------Skype kontakt knapp---------->
+            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+            <div id="SkypeButton_Call__1">
+            </div>
+            <button onclick="sayHello('skal')">Test knapp</button> <!-------test knapp------->
+            <!----------Dato og tid knapp---------->
+            <button type="button"
+                    onclick="document.getElementById('demo').innerHTML = Date()">Klikk her for å se Dato og Tid</button>
+    <p id="demo"></p>
+        <div class="container" style="font-family: 'Raleway', sans-serif;">
+            <ul class="progressbar">
+                <li class="active">Trinn 1</li>
+                <li>Trinn 2</li>
+                <li>Trinn 3</li>
+            </ul>
+        </div>
+        <br><br><br>
+        </div>
+    <br><br>
+        <div class="copyright" id="altfade">
+            <blockquote>
+            <h2><a name="Copyright"></a>Copyright - noen ikoner brukt</h2>
+            <p style=" font-size: 0.8vw">
+                Ikoner lagt av <a href="http://www.freepik.com" title="Freepik">Freepik</a> , <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> , <a href="http://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> og <a href="http://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> fra <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> er lisensiert av <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                </p>
+            </blockquote>
+        </div>
+        <br><br>
+        <a name="liste"></a>
+        <table>
+            <tr>
+                <th>Navn</th>
+                <th>Jobb</th>
+                <th>Nøkkel-ord</th>
+            </tr>
+            <tr>
+                <td>Tommy</td>
+                <td>Front-end webdesigner/utvikler</td>
+                <td>HTML5, CSS3, Javascript, AngularJS, JQuery, WebM, Azure, Paint.net, Brackets, FileZilla, Animasjon, Front-end, Sikkerhet, web-utvikler/designer.</td>
+            </tr>
+            <tr>
+                <td>Johannes</td>
+                <td>Back-end webdesigner/utvikler</td>
+                <td>HTML5, CSS3, SCSS, JQuery, Javascript, MySQL, Git, PHP,  back-end, Webdesigner/utvikler, design, informasjonssamling, Azure, SQL databaser.</td>
+            </tr>
+            <tr>
+                <td>Magnus</td>
+                <td>Helpdesk ansvarlig</td>
+                <td>Helpdesk ansvarlig, osTicket, Incident Manager</td>
+            </tr>
+            <tr>
+                <td>Anders</td>
+                <td>Sharepoint utvikler</td>
+                <td>Sharepoint anvsvarlig, Sharepoint utvikler, knowledgebase, azure, lokal hosting, Vsphere</td>
+            </tr>
+        </table>
+    <div class="tilbakeverktøyknapp">
+        <a href="forskjelligt.html"><button type="button"><img src="bilder/tilbakeverktøyknapp.png" alt="Verktøy ikon";></button></a>
+    </div>
+    </div>
+    <div class="footer">
+    <div id="button"></div>
+                <div id="container">
+                    <div id="cont">
+                        <div class="footer_center">
+	                       <h3>Kontakt oss: <a href="http://192.168.1.125:8080/support/">helpdesk</a> | <a>tlf</a> | <a href="google.com">e-mail</a><img src="bilder/like.png" alt="Verktøy ikon";></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="script.js"></script>
 </body>
 </html>

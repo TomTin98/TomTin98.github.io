@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Om vår bedrift</title>
-    <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
-</head>
+    <head>
+        <title>Om vår bedrift</title>
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+            function goForward() {
+                window.history.forward()
+            }
+        </script>
+    </head>
 <body>
-    <nav id="nav01"></nav>
+    <div class="tilbakeknapp">
+    <a href="index.html"><button type="button"><img src="bilder/tilbakeknapp.png" alt="Verktøy ikon";></button></a>
+    </div>
+    <div class="dineappslogo">
+            <img src="bilder/DineAppsheaderlogo.png" alt="dineappslogo" style="width:782px;height:140px;">
+        </div>
+    <button onclick="goBack()" class="backbutton"><img src="bilder/left-arrow.png" alt="Verktøy ikon";></button>
+        <button onclick="goForward()" class="forwardbutton"><img src="bilder/right-arrow.png" alt="Verktøy ikon";></button>
+        <br>
+        <nav id="nav01"></nav>
+    <div class="omlogo">
+            <img src="bilder/omlogo.png" alt="Om vår bedrift ikon";>
+        </div>
+    <br><br><br>
     <div id="main">
-<h1 style="font-size: 42px;">Om vår bedrift</h1>
-    <div class="omossvenstre">
-  <h1 style="font-size: 42px;">Om oss</h1>
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc metus, ultrices et vehicula quis, tincidunt id erat. Pellentesque hendrerit at nunc id lacinia. Quisque sagittis leo eu venenatis congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eget mauris suscipit, imperdiet enim vel, convallis diam. Pellentesque aliquam pharetra enim et semper. Suspendisse tincidunt, lacus et consequat mattis, dolor turpis egestas risus, sed dignissim turpis odio et ligula. Sed pellentesque laoreet tincidunt. Nam ultrices nec ex at egestas. Ut finibus sem sed ligula pellentesque, et tristique sem sagittis. Proin a diam sapien. Morbi consequat sapien eget iaculis efficitur. Maecenas arcu lectus, imperdiet vel orci sit amet, maximus eleifend quam. Vivamus non laoreet lectus.</p>
-</blockquote>
+        <!---Her skal det være et bilde--->
+        <div class="omossbilde" id="altfade">
+            <img src="bilder/omossbilde.png" alt="hoyre bilde test" style="width:768px;height:432px;">
+        </div>
+        <!---Her skal det være et bilde--->
+    <br><br>
+    <div class="row">
+    <div class="col">
+        <h2>Johannes og Tommy</h2>
+            <blockquote>
+                <p style=" font-size: 0.8vw">
+                    Johannes har rolle som back-end  "Webdesigner/utvikler" og jobber med funksjonalitet og design på nettsider. Driver med informasjonssamling og er blitt "ekspert" på HTML5, CSS3, SCSS, JQuery, Javascript, MySQL, Azure SQL databaser, Git og PHP.
+                </p>
+                <p style=" font-size: 0.8vw">
+                    Mens Tommy har rolle som front-end webdesigner/utvikler og jobber med Azure website hosting og Nettsider og er blitt "ekspert" på Azure hosting, HTML5, CSS3, CSS3 animasjoner, WebM, JavaScript, JQuery og AngularJS.
+                </p>       
     </div>
-    <div class="omossvenstrenede">
-  <h1 style="font-size: 42px;">Hva vi gjør</h1>
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc metus, ultrices et vehicula quis, tincidunt id erat. Pellentesque hendrerit at nunc id lacinia. Quisque sagittis leo eu venenatis congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eget mauris suscipit, imperdiet enim vel, convallis diam. Pellentesque aliquam pharetra enim et semper. Suspendisse tincidunt, lacus et consequat mattis, dolor turpis egestas risus, sed dignissim turpis odio et ligula. Sed pellentesque laoreet tincidunt. Nam ultrices nec ex at egestas. Ut finibus sem sed ligula pellentesque, et tristique sem sagittis. Proin a diam sapien. Morbi consequat sapien eget iaculis efficitur. Maecenas arcu lectus, imperdiet vel orci sit amet, maximus eleifend quam. Vivamus non laoreet lectus.</p>
-</blockquote>
+    <div class="col">
+        <h2>Anders og Magnus</h2>
+            <blockquote>
+                <p style=" font-size: 0.8vw">
+                    Anders har rolle som Sharepoint anvsvarlig og jobber med å utvikle Sharepointen slik at bedriften kan bruke den som en knowledgebase, jobber også med azure og lokal hosting av sharepoint, og er blitt "ekspert" på Sharepoint og Vsphere.
+                </p>
+                <p style=" font-size: 0.8vw">
+                    Magnus har rolle som Helpdesk ansvarlig, og jobber med osTicket som er Helpdesksystemet vi bruker i Dine Apps. Magnus har også blitt "ekspert" på å overvåke arbeidere (Incident Manager) som jobber på helpdesken.
+                </p>
+                </blockquote>
     </div>
-    <div class="omosshoyre">
-        <img src="http://s33.postimg.org/ei55ikptb/Cerapture.png" alt="hoyre bilde test" style="width:550px;height:750px;">
+    </div>
+    <div class="tilbakeverktøyknapp">
+        <a href="omvårbedrift.html"><button type="button"><img src="bilder/tilbakeverktøyknapp.png" alt="Verktøy ikon";></button></a>
     </div>
     </div>
-    <footer id="foot01"></footer>
+    <div class="footer">
+    <div id="button"></div>
+                <div id="container">
+                    <div id="cont">
+                        <div class="footer_center">
+	                       <h3>Kontakt oss: <a href="http://192.168.1.125:8080/support/">helpdesk</a> | <a>tlf</a> | <a href="google.com">e-mail</a><img src="bilder/like.png" alt="Verktøy ikon";></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <script src="script.js"></script>
 </body>
 </html>
